@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <p class="calculation-result js-result-display">0</p>
+        </div>
+        <div class="calculator-keys">
+          <button onclick="calculator('+')">+</button>
+          <button onclick="calculator('-')">-</button>
+          <button onclick="calculator('*')">&times;</button>
+          <button onclick="calculator('/')">&divide;</button>
+          <button onclick="calculator('7')">7</button>
+          <button onclick="calculator('8')">8</button>
+          <button onclick="calculator('9')">9</button>
+          <button onclick="calculator('4')">4</button>
+          <button onclick="calculator('5')">5</button>
+          <button onclick="calculator('6')">6</button>
+          <button onclick="calculator('1')">1</button>
+          <button onclick="calculator('2')">2</button>
+          <button onclick="calculator('3')">3</button>
+          <button onclick="calculator('0')">0</button>
+          <button onclick="calculator('.')">.</button>
+          <button onclick="clearDisplay()">AC</button>
+          <button class="equal-sign" onclick="calculateResult()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
